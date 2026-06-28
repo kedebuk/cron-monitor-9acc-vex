@@ -1,6 +1,6 @@
 {
   "title": "Cron Monitor — 9acc Vex",
-  "snapshot": "2026-06-29 01:05:28 WIB",
+  "snapshot": "2026-06-29 01:10:25 WIB",
   "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
   "accounts": [
     "Roni Riady-22 | 1953",
@@ -151,50 +151,6 @@
         "tail": ""
       },
       "note": ""
-    },
-    {
-      "label": "com.vex.activate-val-5am",
-      "title": "Val 9acc auto-ON utama jam 05:00",
-      "category": "Val automation",
-      "status": "disabled",
-      "launchctl": {
-        "pid": null,
-        "last_status": "1"
-      },
-      "schedule": "05:00 WIB",
-      "program": "/opt/homebrew/bin/python3 vex-activate-val.py",
-      "script": "vex-activate-val.py",
-      "stdout": {
-        "path": "vex-activate-val-5am.log",
-        "exists": false
-      },
-      "stderr": {
-        "path": "vex-activate-val-5am.log",
-        "exists": false
-      },
-      "note": "Disabled/renamed; tidak akan jalan sampai di-enable ulang."
-    },
-    {
-      "label": "com.vex.activate-val-5am",
-      "title": "Val 9acc auto-ON utama jam 05:00",
-      "category": "Val automation",
-      "status": "disabled",
-      "launchctl": {
-        "pid": null,
-        "last_status": "1"
-      },
-      "schedule": "05:00 WIB",
-      "program": "/opt/homebrew/bin/python3 vex-activate-val.py",
-      "script": "vex-activate-val.py",
-      "stdout": {
-        "path": "vex-activate-val-5am.log",
-        "exists": false
-      },
-      "stderr": {
-        "path": "vex-activate-val-5am.log",
-        "exists": false
-      },
-      "note": "Disabled/renamed; tidak akan jalan sampai di-enable ulang."
     },
     {
       "label": "com.vex.boncos-alert-20",
@@ -615,44 +571,6 @@
       "note": ""
     },
     {
-      "label": "com.vex.reset-val-budget-backup",
-      "title": "Val 9acc reset budget backup 00:10 (disabled file)",
-      "category": "Val automation",
-      "status": "disabled",
-      "launchctl": null,
-      "schedule": "00:10 WIB",
-      "program": "/opt/homebrew/bin/python3 vex-reset-val-budget.py",
-      "script": "vex-reset-val-budget.py",
-      "stdout": {
-        "path": "vex-reset-val-budget-backup.log",
-        "exists": false
-      },
-      "stderr": {
-        "path": "vex-reset-val-budget-backup.log",
-        "exists": false
-      },
-      "note": "Disabled/renamed; tidak akan jalan sampai di-enable ulang."
-    },
-    {
-      "label": "com.vex.reset-val-budget",
-      "title": "Val 9acc reset budget utama jam 23:00 (disabled file)",
-      "category": "Val automation",
-      "status": "disabled",
-      "launchctl": null,
-      "schedule": "23:00 WIB",
-      "program": "/opt/homebrew/bin/python3 vex-reset-val-budget.py",
-      "script": "vex-reset-val-budget.py",
-      "stdout": {
-        "path": "vex-reset-val-budget.log",
-        "exists": false
-      },
-      "stderr": {
-        "path": "vex-reset-val-budget.log",
-        "exists": false
-      },
-      "note": "Disabled/renamed; tidak akan jalan sampai di-enable ulang."
-    },
-    {
       "label": "com.vex.sheet-link-watcher",
       "title": "Scan sheet Link GDrive Test → manifest preview bulk upload",
       "category": "Sheet / upload pipeline",
@@ -704,6 +622,88 @@
         "tail": "LP active check: 4/107 campaigns with URL, 8 URLs, 1 bad, 5 slug mismatch\nSent: 0 boncos (0 paused, 0 reactivated), 5 gacor, 0 bumped, 0 delayed winners re-on\nSummary: 30 campaigns, spend Rp 2,143,522, 34P"
       },
       "note": ""
+    },
+    {
+      "label": "com.vex.activate-val-5am",
+      "title": "Val 9acc auto-ON utama jam 05:00",
+      "category": "Val automation",
+      "status": "disabled",
+      "launchctl": {
+        "pid": null,
+        "last_status": "1"
+      },
+      "schedule": "05:00 WIB",
+      "program": "/opt/homebrew/bin/python3 vex-activate-val.py",
+      "script": "vex-activate-val.py",
+      "stdout": {
+        "path": "vex-activate-val-5am.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-activate-val-5am.log",
+        "exists": false
+      },
+      "note": "Disabled/renamed; tidak akan jalan sampai di-enable ulang."
+    },
+    {
+      "label": "com.vex.activate-val-5am",
+      "title": "Val 9acc auto-ON utama jam 05:00",
+      "category": "Val automation",
+      "status": "disabled",
+      "launchctl": {
+        "pid": null,
+        "last_status": "1"
+      },
+      "schedule": "05:00 WIB",
+      "program": "/opt/homebrew/bin/python3 vex-activate-val.py",
+      "script": "vex-activate-val.py",
+      "stdout": {
+        "path": "vex-activate-val-5am.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-activate-val-5am.log",
+        "exists": false
+      },
+      "note": "Disabled/renamed; tidak akan jalan sampai di-enable ulang."
+    },
+    {
+      "label": "com.vex.reset-val-budget-backup",
+      "title": "Val 9acc reset budget backup 00:10 (disabled file)",
+      "category": "Val automation",
+      "status": "disabled",
+      "launchctl": null,
+      "schedule": "00:10 WIB",
+      "program": "/opt/homebrew/bin/python3 vex-reset-val-budget.py",
+      "script": "vex-reset-val-budget.py",
+      "stdout": {
+        "path": "vex-reset-val-budget-backup.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-reset-val-budget-backup.log",
+        "exists": false
+      },
+      "note": "Disabled/renamed; tidak akan jalan sampai di-enable ulang."
+    },
+    {
+      "label": "com.vex.reset-val-budget",
+      "title": "Val 9acc reset budget utama jam 23:00 (disabled file)",
+      "category": "Val automation",
+      "status": "disabled",
+      "launchctl": null,
+      "schedule": "23:00 WIB",
+      "program": "/opt/homebrew/bin/python3 vex-reset-val-budget.py",
+      "script": "vex-reset-val-budget.py",
+      "stdout": {
+        "path": "vex-reset-val-budget.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-reset-val-budget.log",
+        "exists": false
+      },
+      "note": "Disabled/renamed; tidak akan jalan sampai di-enable ulang."
     }
   ],
   "source": {
