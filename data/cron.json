@@ -1,6 +1,6 @@
 {
   "title": "Cron Monitor — 9acc Vex",
-  "snapshot": "2026-06-29 06:12:21 WIB",
+  "snapshot": "2026-06-29 06:42:25 WIB",
   "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
   "accounts": [
     "Roni Riady-22 | 1953",
@@ -16,9 +16,8 @@
   ],
   "summary": {
     "last-exit-nonzero": 2,
-    "running": 1,
+    "loaded": 3,
     "not-loaded": 24,
-    "loaded": 2,
     "disabled": 4
   },
   "jobs": [
@@ -54,9 +53,9 @@
       "label": "com.vex.9acc-ads-campaign-guard",
       "title": "9acc guard: pause campaign jika spend tinggi tanpa IC/purchase",
       "category": "Guard / kill-switch",
-      "status": "running",
+      "status": "loaded",
       "launchctl": {
-        "pid": "52038",
+        "pid": null,
         "last_status": "0"
       },
       "schedule": "tiap 30 menit",
@@ -65,8 +64,8 @@
       "stdout": {
         "path": "logs-9acc-ads-campaign-guard-launchd.log",
         "exists": true,
-        "size": 71313,
-        "mtime": "2026-06-29 05:41:43 WIB",
+        "size": 71531,
+        "mtime": "2026-06-29 06:12:40 WIB",
         "tail": "mes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 119, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 119, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
       },
       "stderr": {
