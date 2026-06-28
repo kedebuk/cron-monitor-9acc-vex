@@ -1,0 +1,715 @@
+{
+  "title": "Cron Monitor — 9acc Vex",
+  "snapshot": "2026-06-29 01:05:28 WIB",
+  "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
+  "accounts": [
+    "Roni Riady-22 | 1953",
+    "Roni Riady-23 | 1953",
+    "Roni Riady-24 | 1953",
+    "Roni Riady-25 | 1953",
+    "Roni Riady-26 | 1953",
+    "MKH - HERBAHERO - 25",
+    "MKH - HERBAHERO - 27",
+    "MKH - HERBAHERO - 28",
+    "MKH - HERBAHERO - 26",
+    "EVPO - SP - Herbahero HKM - 74"
+  ],
+  "summary": {
+    "loaded": 4,
+    "not-loaded": 24,
+    "last-exit-nonzero": 1,
+    "disabled": 4
+  },
+  "jobs": [
+    {
+      "label": "com.kira.vex-roas-hourly",
+      "title": "ROAS/report hourly all 9acc ke grup",
+      "category": "Reports / alerts",
+      "status": "loaded",
+      "launchctl": {
+        "pid": null,
+        "last_status": "0"
+      },
+      "schedule": "05:03, 06:03, 07:03, 08:03, 09:03, 10:03, 11:03, 12:03, 13:03, 14:03, 15:03, 16:03, 17:03, 18:03, 19:03, 20:03, 21:03, 22:03, 23:03, 00:03 WIB",
+      "program": "/bin/bash vex-hourly-all.sh",
+      "script": "vex-hourly-all.sh",
+      "stdout": {
+        "path": "vex-cron.log",
+        "exists": true,
+        "size": 777687,
+        "mtime": "2026-06-29 00:06:10 WIB",
+        "tail": ">>> push-spending-limits.py\n⏸ Skip — di luar jam operasional\n[2026-06-29 00:06:10] All hourly jobs done."
+      },
+      "stderr": {
+        "path": "vex-cron.err",
+        "exists": true,
+        "size": 0,
+        "mtime": "2026-06-28 00:03:04 WIB",
+        "tail": ""
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.9acc-ads-campaign-guard",
+      "title": "9acc guard: pause campaign jika spend tinggi tanpa IC/purchase",
+      "category": "Guard / kill-switch",
+      "status": "loaded",
+      "launchctl": {
+        "pid": null,
+        "last_status": "0"
+      },
+      "schedule": "tiap 30 menit",
+      "program": "/opt/homebrew/bin/python3 vex-9acc-ads-campaign-guard.py --apply",
+      "script": "vex-9acc-ads-campaign-guard.py",
+      "stdout": {
+        "path": "logs-9acc-ads-campaign-guard-launchd.log",
+        "exists": true,
+        "size": 69351,
+        "mtime": "2026-06-29 01:01:58 WIB",
+        "tail": "mes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 119, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 119, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
+      },
+      "stderr": {
+        "path": "logs-9acc-ads-campaign-guard-launchd.err",
+        "exists": true,
+        "size": 0,
+        "mtime": "2026-06-22 02:25:59 WIB",
+        "tail": ""
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.9acc-meta-scale-watchdog",
+      "title": "9acc scale watchdog / monitor perubahan scale Meta",
+      "category": "Guard / kill-switch",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "tiap 30 menit",
+      "program": "/usr/bin/python3 vex-9acc-meta-scale-watchdog.py",
+      "script": "vex-9acc-meta-scale-watchdog.py",
+      "stdout": {
+        "path": "9acc-meta-scale-watchdog.out.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "9acc-meta-scale-watchdog.err.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.activate-val-0530-fallback",
+      "title": "Val 9acc auto-ON fallback jam 05:30",
+      "category": "Val automation",
+      "status": "loaded",
+      "launchctl": {
+        "pid": null,
+        "last_status": "0"
+      },
+      "schedule": "05:30 WIB",
+      "program": "/opt/homebrew/bin/python3 vex-activate-val-daily-no-budget.py --run-label fallback-05:30",
+      "script": "vex-activate-val-daily-no-budget.py",
+      "stdout": {
+        "path": "logs-vex-activate-val-0530-fallback.log",
+        "exists": true,
+        "size": 1662,
+        "mtime": "2026-06-28 05:30:10 WIB",
+        "tail": "Failures: 0\nAccount read errors: 0\nArtifact: /Users/kantor/.hermes/profiles/vex/state/vex-val-auto-on-no-budget-20260628-053010.json"
+      },
+      "stderr": {
+        "path": "logs-vex-activate-val-0530-fallback.err",
+        "exists": true,
+        "size": 0,
+        "mtime": "2026-06-23 05:30:00 WIB",
+        "tail": ""
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.activate-val-5am",
+      "title": "Val 9acc auto-ON utama jam 05:00",
+      "category": "Val automation",
+      "status": "last-exit-nonzero",
+      "launchctl": {
+        "pid": null,
+        "last_status": "1"
+      },
+      "schedule": "05:00 WIB",
+      "program": "/opt/homebrew/bin/python3 vex-activate-val-daily-no-budget.py --run-label primary-05:00",
+      "script": "vex-activate-val-daily-no-budget.py",
+      "stdout": {
+        "path": "logs-vex-activate-val-5am.log",
+        "exists": true,
+        "size": 1656,
+        "mtime": "2026-06-28 05:00:11 WIB",
+        "tail": "Failures: 7\nAccount read errors: 0\nArtifact: /Users/kantor/.hermes/profiles/vex/state/vex-val-auto-on-no-budget-20260628-050011.json"
+      },
+      "stderr": {
+        "path": "logs-vex-activate-val-5am.err",
+        "exists": true,
+        "size": 0,
+        "mtime": "2026-06-23 05:00:01 WIB",
+        "tail": ""
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.activate-val-5am",
+      "title": "Val 9acc auto-ON utama jam 05:00",
+      "category": "Val automation",
+      "status": "disabled",
+      "launchctl": {
+        "pid": null,
+        "last_status": "1"
+      },
+      "schedule": "05:00 WIB",
+      "program": "/opt/homebrew/bin/python3 vex-activate-val.py",
+      "script": "vex-activate-val.py",
+      "stdout": {
+        "path": "vex-activate-val-5am.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-activate-val-5am.log",
+        "exists": false
+      },
+      "note": "Disabled/renamed; tidak akan jalan sampai di-enable ulang."
+    },
+    {
+      "label": "com.vex.activate-val-5am",
+      "title": "Val 9acc auto-ON utama jam 05:00",
+      "category": "Val automation",
+      "status": "disabled",
+      "launchctl": {
+        "pid": null,
+        "last_status": "1"
+      },
+      "schedule": "05:00 WIB",
+      "program": "/opt/homebrew/bin/python3 vex-activate-val.py",
+      "script": "vex-activate-val.py",
+      "stdout": {
+        "path": "vex-activate-val-5am.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-activate-val-5am.log",
+        "exists": false
+      },
+      "note": "Disabled/renamed; tidak akan jalan sampai di-enable ulang."
+    },
+    {
+      "label": "com.vex.boncos-alert-20",
+      "title": "Boncos alert malam",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "20:00 WIB",
+      "program": "/usr/bin/python3 boncos-alert.py evening",
+      "script": "boncos-alert.py",
+      "stdout": {
+        "path": "vex-boncos-20.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-boncos-20.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.boncos-alert-afternoon",
+      "title": "Boncos alert siang",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "14:00 WIB",
+      "program": "/usr/bin/python3 boncos-alert.py afternoon",
+      "script": "boncos-alert.py",
+      "stdout": {
+        "path": "vex-boncos-afternoon.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-boncos-afternoon.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.boncos-alert-evening",
+      "title": "Boncos alert sore",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "19:00 WIB",
+      "program": "/usr/bin/python3 boncos-alert.py evening",
+      "script": "boncos-alert.py",
+      "stdout": {
+        "path": "vex-boncos-evening.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-boncos-evening.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.boncos-alert-morning",
+      "title": "Boncos alert pagi",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "10:00 WIB",
+      "program": "/usr/bin/python3 boncos-alert.py morning",
+      "script": "boncos-alert.py",
+      "stdout": {
+        "path": "vex-boncos-morning.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-boncos-morning.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.cashguard-10",
+      "title": "Cashguard 10:15",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "10:15 WIB",
+      "program": "/usr/bin/python3 cashguard.py",
+      "script": "cashguard.py",
+      "stdout": {
+        "path": "vex-cashguard.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-cashguard.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.cashguard-13",
+      "title": "Cashguard 13:15",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "13:15 WIB",
+      "program": "/usr/bin/python3 cashguard.py",
+      "script": "cashguard.py",
+      "stdout": {
+        "path": "vex-cashguard.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-cashguard.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.cashguard-16",
+      "title": "Cashguard 16:15",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "16:15 WIB",
+      "program": "/usr/bin/python3 cashguard.py",
+      "script": "cashguard.py",
+      "stdout": {
+        "path": "vex-cashguard.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-cashguard.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.cashguard-19",
+      "title": "Cashguard 19:15",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "19:15 WIB",
+      "program": "/usr/bin/python3 cashguard.py",
+      "script": "cashguard.py",
+      "stdout": {
+        "path": "vex-cashguard.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-cashguard.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.cashguard-7",
+      "title": "Cashguard 07:15",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "07:15 WIB",
+      "program": "/usr/bin/python3 cashguard.py",
+      "script": "cashguard.py",
+      "stdout": {
+        "path": "vex-cashguard.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-cashguard.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.duo-detector",
+      "title": "Duo detector 9acc",
+      "category": "Detectors",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "10:00, 12:00, 14:00, 16:00, 18:00, 20:00 WIB",
+      "program": "/opt/homebrew/bin/python3 duo-detector.py",
+      "script": "duo-detector.py",
+      "stdout": {
+        "path": "vex-duo-detector.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-duo-detector.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.ebook-perf-sheet",
+      "title": "Update sheet Ads Performance V2 dari Meta 9acc",
+      "category": "Sheet / upload pipeline",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "08:00 WIB",
+      "program": "/bin/bash vex-ebook-perf-sheet.sh",
+      "script": "vex-ebook-perf-sheet.sh",
+      "stdout": {
+        "path": "vex-ebook-perf-sheet.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-ebook-perf-sheet.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.monitor-saldo",
+      "title": "Monitor spending limit/saldo 9acc",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "tiap 60 menit",
+      "program": "/opt/homebrew/bin/python3 monitor-spending-limit.py",
+      "script": "monitor-spending-limit.py",
+      "stdout": {
+        "path": "vex-monitor-saldo.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-monitor-saldo.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.morning-brief",
+      "title": "Morning brief Vex",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "07:00 WIB",
+      "program": "/usr/bin/python3 morning-brief.py",
+      "script": "morning-brief.py",
+      "stdout": {
+        "path": "vex-morning-brief.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-morning-brief.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.nightcap",
+      "title": "Nightcap Vex",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "22:00 WIB",
+      "program": "/usr/bin/python3 nightcap.py",
+      "script": "nightcap.py",
+      "stdout": {
+        "path": "vex-nightcap.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-nightcap.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.nightly-val-check",
+      "title": "Nightly Val 9acc health check",
+      "category": "Detectors",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "22:00 WIB",
+      "program": "/usr/bin/python3 vex-nightly-val-check.py",
+      "script": "vex-nightly-val-check.py",
+      "stdout": {
+        "path": "vex-nightly-val-check.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-nightly-val-check.err",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.pulse-check-10",
+      "title": "Pulse check 10:05",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "10:05 WIB",
+      "program": "/usr/bin/python3 pulse-check.py",
+      "script": "pulse-check.py",
+      "stdout": {
+        "path": "vex-pulse-check.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-pulse-check.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.pulse-check-12",
+      "title": "Pulse check 12:05",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "12:05 WIB",
+      "program": "/usr/bin/python3 pulse-check.py",
+      "script": "pulse-check.py",
+      "stdout": {
+        "path": "vex-pulse-check.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-pulse-check.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.pulse-check-14",
+      "title": "Pulse check 14:05",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "14:05 WIB",
+      "program": "/usr/bin/python3 pulse-check.py",
+      "script": "pulse-check.py",
+      "stdout": {
+        "path": "vex-pulse-check.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-pulse-check.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.pulse-check-16",
+      "title": "Pulse check 16:05",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "16:05 WIB",
+      "program": "/usr/bin/python3 pulse-check.py",
+      "script": "pulse-check.py",
+      "stdout": {
+        "path": "vex-pulse-check.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-pulse-check.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.pulse-check-18",
+      "title": "Pulse check 18:05",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "18:05 WIB",
+      "program": "/usr/bin/python3 pulse-check.py",
+      "script": "pulse-check.py",
+      "stdout": {
+        "path": "vex-pulse-check.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-pulse-check.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.pulse-check-20",
+      "title": "Pulse check 20:05",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "20:05 WIB",
+      "program": "/usr/bin/python3 pulse-check.py",
+      "script": "pulse-check.py",
+      "stdout": {
+        "path": "vex-pulse-check.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-pulse-check.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.pulse-check-8",
+      "title": "Pulse check 08:05",
+      "category": "Reports / alerts",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "08:05 WIB",
+      "program": "/usr/bin/python3 pulse-check.py",
+      "script": "pulse-check.py",
+      "stdout": {
+        "path": "vex-pulse-check.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-pulse-check.log",
+        "exists": false
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.reset-val-budget-backup",
+      "title": "Val 9acc reset budget backup 00:10 (disabled file)",
+      "category": "Val automation",
+      "status": "disabled",
+      "launchctl": null,
+      "schedule": "00:10 WIB",
+      "program": "/opt/homebrew/bin/python3 vex-reset-val-budget.py",
+      "script": "vex-reset-val-budget.py",
+      "stdout": {
+        "path": "vex-reset-val-budget-backup.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-reset-val-budget-backup.log",
+        "exists": false
+      },
+      "note": "Disabled/renamed; tidak akan jalan sampai di-enable ulang."
+    },
+    {
+      "label": "com.vex.reset-val-budget",
+      "title": "Val 9acc reset budget utama jam 23:00 (disabled file)",
+      "category": "Val automation",
+      "status": "disabled",
+      "launchctl": null,
+      "schedule": "23:00 WIB",
+      "program": "/opt/homebrew/bin/python3 vex-reset-val-budget.py",
+      "script": "vex-reset-val-budget.py",
+      "stdout": {
+        "path": "vex-reset-val-budget.log",
+        "exists": false
+      },
+      "stderr": {
+        "path": "vex-reset-val-budget.log",
+        "exists": false
+      },
+      "note": "Disabled/renamed; tidak akan jalan sampai di-enable ulang."
+    },
+    {
+      "label": "com.vex.sheet-link-watcher",
+      "title": "Scan sheet Link GDrive Test → manifest preview bulk upload",
+      "category": "Sheet / upload pipeline",
+      "status": "not-loaded",
+      "launchctl": null,
+      "schedule": "16:00, 17:00, 18:00, 19:00, 20:00 WIB",
+      "program": "/bin/bash vex-sheet-link-watcher.sh",
+      "script": "vex-sheet-link-watcher.sh",
+      "stdout": {
+        "path": "vex-sheet-link-watcher.stdout.log",
+        "exists": true,
+        "size": 0,
+        "mtime": "2026-05-04 16:00:03 WIB",
+        "tail": ""
+      },
+      "stderr": {
+        "path": "vex-sheet-link-watcher.stderr.log",
+        "exists": true,
+        "size": 13110,
+        "mtime": "2026-05-27 20:00:01 WIB",
+        "tail": "/bin/bash: /Users/kantor/.openclaw/workspace/agents/meta-ads/vex-sheet-link-watcher.sh: No such file or directory\n/bin/bash: /Users/kantor/.openclaw/workspace/agents/meta-ads/vex-sheet-link-watcher.sh: No such file or directory\n/bin/bash: /Users/kantor/.openclaw/workspace/agents/meta-ads/vex-sheet-link-watcher.sh: No such file or directory"
+      },
+      "note": ""
+    },
+    {
+      "label": "com.vex.trio-detector",
+      "title": "Trio detector 9acc",
+      "category": "Detectors",
+      "status": "loaded",
+      "launchctl": {
+        "pid": null,
+        "last_status": "0"
+      },
+      "schedule": "06:00, 08:00, 10:00, 12:00, 14:00, 16:00, 18:00, 20:00 WIB",
+      "program": "/opt/homebrew/bin/python3 trio-detector.py",
+      "script": "trio-detector.py",
+      "stdout": {
+        "path": "vex-trio-detector.log",
+        "exists": true,
+        "size": 66401,
+        "mtime": "2026-06-28 20:01:43 WIB",
+        "tail": "LP active check: 4/107 campaigns with URL, 8 URLs, 1 bad, 5 slug mismatch\nSent: 0 boncos (0 paused, 0 reactivated), 5 gacor, 0 bumped, 0 delayed winners re-on\nSummary: 30 campaigns, spend Rp 2,143,522, 34P"
+      },
+      "stderr": {
+        "path": "vex-trio-detector.log",
+        "exists": true,
+        "size": 66401,
+        "mtime": "2026-06-28 20:01:43 WIB",
+        "tail": "LP active check: 4/107 campaigns with URL, 8 URLs, 1 bad, 5 slug mismatch\nSent: 0 boncos (0 paused, 0 reactivated), 5 gacor, 0 bumped, 0 delayed winners re-on\nSummary: 30 campaigns, spend Rp 2,143,522, 34P"
+      },
+      "note": ""
+    }
+  ],
+  "source": {
+    "host": "Mac Mini kantor",
+    "launchagents": "/Users/kantor/Library/LaunchAgents",
+    "vex_workspace": "/Users/kantor/.hermes/profiles/vex/workspace",
+    "token_policy": "No Meta token or credential is stored in this repo/dashboard."
+  }
+}
