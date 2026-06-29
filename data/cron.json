@@ -1,6 +1,6 @@
 {
   "title": "Cron Monitor — 9acc Vex",
-  "snapshot": "2026-06-29 19:44:01 WIB",
+  "snapshot": "2026-06-29 20:14:05 WIB",
   "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
   "accounts": [
     "Roni Riady-22 | 1953",
@@ -16,8 +16,9 @@
   ],
   "summary": {
     "last-exit-nonzero": 2,
-    "loaded": 4,
+    "running": 1,
     "not-loaded": 23,
+    "loaded": 3,
     "disabled": 4
   },
   "jobs": [
@@ -36,9 +37,9 @@
       "stdout": {
         "path": "vex-cron.log",
         "exists": true,
-        "size": 877923,
-        "mtime": "2026-06-29 19:03:47 WIB",
-        "tail": "\n✅ Pushed 0 accounts to Supabase\n[2026-06-29 19:03:47] Hourly push selesai dengan gagal di: push-roas-supabase.py"
+        "size": 884609,
+        "mtime": "2026-06-29 20:03:45 WIB",
+        "tail": "\n✅ Pushed 0 accounts to Supabase\n[2026-06-29 20:03:45] Hourly push selesai dengan gagal di: push-roas-supabase.py"
       },
       "stderr": {
         "path": "vex-cron.err",
@@ -53,9 +54,9 @@
       "label": "com.vex.9acc-ads-campaign-guard",
       "title": "9acc guard: pause campaign jika spend tinggi tanpa IC/purchase",
       "category": "Guard / kill-switch",
-      "status": "loaded",
+      "status": "running",
       "launchctl": {
-        "pid": null,
+        "pid": "8662",
         "last_status": "0"
       },
       "schedule": "tiap 30 menit",
@@ -619,16 +620,16 @@
       "stdout": {
         "path": "vex-trio-detector.log",
         "exists": true,
-        "size": 70214,
-        "mtime": "2026-06-29 18:01:37 WIB",
-        "tail": "Paused: 1 campaigns\nSent: 1 boncos (1 paused, 0 reactivated), 0 gacor, 0 bumped, 0 delayed winners re-on\nSummary: 35 campaigns, spend Rp 3,158,168, 55P"
+        "size": 70850,
+        "mtime": "2026-06-29 20:01:46 WIB",
+        "tail": "Reactivated: 0 / kept paused: 1\nSent: 0 boncos (0 paused, 0 reactivated), 6 gacor, 0 bumped, 0 delayed winners re-on\nSummary: 36 campaigns, spend Rp 3,597,539, 57P"
       },
       "stderr": {
         "path": "vex-trio-detector.log",
         "exists": true,
-        "size": 70214,
-        "mtime": "2026-06-29 18:01:37 WIB",
-        "tail": "Paused: 1 campaigns\nSent: 1 boncos (1 paused, 0 reactivated), 0 gacor, 0 bumped, 0 delayed winners re-on\nSummary: 35 campaigns, spend Rp 3,158,168, 55P"
+        "size": 70850,
+        "mtime": "2026-06-29 20:01:46 WIB",
+        "tail": "Reactivated: 0 / kept paused: 1\nSent: 0 boncos (0 paused, 0 reactivated), 6 gacor, 0 bumped, 0 delayed winners re-on\nSummary: 36 campaigns, spend Rp 3,597,539, 57P"
       },
       "note": ""
     },
