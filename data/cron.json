@@ -1,6 +1,6 @@
 {
   "title": "Cron Monitor — 9acc Vex",
-  "snapshot": "2026-06-29 08:12:36 WIB",
+  "snapshot": "2026-06-29 08:42:40 WIB",
   "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
   "accounts": [
     "Roni Riady-22 | 1953",
@@ -16,8 +16,8 @@
   ],
   "summary": {
     "last-exit-nonzero": 2,
-    "loaded": 3,
-    "not-loaded": 24,
+    "loaded": 4,
+    "not-loaded": 23,
     "disabled": 4
   },
   "jobs": [
@@ -64,9 +64,9 @@
       "stdout": {
         "path": "logs-9acc-ads-campaign-guard-launchd.log",
         "exists": true,
-        "size": 72185,
-        "mtime": "2026-06-29 07:45:32 WIB",
-        "tail": "mes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 119, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 119, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
+        "size": 72403,
+        "mtime": "2026-06-29 08:16:48 WIB",
+        "tail": "mes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 119, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 120, \"paused_count\": 1, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
       },
       "stderr": {
         "path": "logs-9acc-ads-campaign-guard-launchd.err",
@@ -365,18 +365,27 @@
       "label": "com.vex.monitor-saldo",
       "title": "Monitor spending limit/saldo 9acc",
       "category": "Reports / alerts",
-      "status": "not-loaded",
-      "launchctl": null,
+      "status": "loaded",
+      "launchctl": {
+        "pid": null,
+        "last_status": "0"
+      },
       "schedule": "tiap 60 menit",
       "program": "/opt/homebrew/bin/python3 monitor-spending-limit.py",
       "script": "monitor-spending-limit.py",
       "stdout": {
         "path": "vex-monitor-saldo.log",
-        "exists": false
+        "exists": true,
+        "size": 34,
+        "mtime": "2026-06-29 08:38:13 WIB",
+        "tail": "All clear — semua di atas Rp1jt"
       },
       "stderr": {
         "path": "vex-monitor-saldo.log",
-        "exists": false
+        "exists": true,
+        "size": 34,
+        "mtime": "2026-06-29 08:38:13 WIB",
+        "tail": "All clear — semua di atas Rp1jt"
       },
       "note": ""
     },
