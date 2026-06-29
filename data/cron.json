@@ -1,6 +1,6 @@
 {
   "title": "Cron Monitor — 9acc Vex",
-  "snapshot": "2026-06-30 04:16:05 WIB",
+  "snapshot": "2026-06-30 04:46:08 WIB",
   "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
   "accounts": [
     "Roni Riady-22 | 1953",
@@ -64,8 +64,8 @@
       "stdout": {
         "path": "logs-9acc-ads-campaign-guard-launchd.log",
         "exists": true,
-        "size": 80687,
-        "mtime": "2026-06-30 04:02:12 WIB",
+        "size": 80905,
+        "mtime": "2026-06-30 04:33:35 WIB",
         "tail": "mes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 120, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 120, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
       },
       "stderr": {
@@ -376,16 +376,16 @@
       "stdout": {
         "path": "vex-monitor-saldo.log",
         "exists": true,
-        "size": 500,
-        "mtime": "2026-06-30 03:38:48 WIB",
-        "tail": "Notif sent: 2 akun\nAll clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt"
+        "size": 534,
+        "mtime": "2026-06-30 04:38:49 WIB",
+        "tail": "All clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt"
       },
       "stderr": {
         "path": "vex-monitor-saldo.log",
         "exists": true,
-        "size": 500,
-        "mtime": "2026-06-30 03:38:48 WIB",
-        "tail": "Notif sent: 2 akun\nAll clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt"
+        "size": 534,
+        "mtime": "2026-06-30 04:38:49 WIB",
+        "tail": "All clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt"
       },
       "note": ""
     },
