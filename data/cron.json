@@ -1,6 +1,6 @@
 {
   "title": "Cron Monitor — 9acc Vex",
-  "snapshot": "2026-06-29 22:45:23 WIB",
+  "snapshot": "2026-06-29 23:15:27 WIB",
   "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
   "accounts": [
     "Roni Riady-22 | 1953",
@@ -36,9 +36,9 @@
       "stdout": {
         "path": "vex-cron.log",
         "exists": true,
-        "size": 897995,
-        "mtime": "2026-06-29 22:03:49 WIB",
-        "tail": "\n✅ Pushed 0 accounts to Supabase\n[2026-06-29 22:03:49] Hourly push selesai dengan gagal di: push-roas-supabase.py"
+        "size": 904681,
+        "mtime": "2026-06-29 23:03:48 WIB",
+        "tail": "\n✅ Pushed 0 accounts to Supabase\n[2026-06-29 23:03:48] Hourly push selesai dengan gagal di: push-roas-supabase.py"
       },
       "stderr": {
         "path": "vex-cron.err",
@@ -64,8 +64,8 @@
       "stdout": {
         "path": "logs-9acc-ads-campaign-guard-launchd.log",
         "exists": true,
-        "size": 78289,
-        "mtime": "2026-06-29 22:19:11 WIB",
+        "size": 78507,
+        "mtime": "2026-06-29 22:50:18 WIB",
         "tail": "mes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 120, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 120, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
       },
       "stderr": {
