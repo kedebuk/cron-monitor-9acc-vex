@@ -1,6 +1,6 @@
 {
   "title": "Cron Monitor — 9acc Vex",
-  "snapshot": "2026-07-01 05:19:10 WIB",
+  "snapshot": "2026-07-01 05:49:13 WIB",
   "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
   "accounts": [
     "Roni Riady-22 | 1953",
@@ -15,9 +15,10 @@
     "EVPO - SP - Herbahero HKM - 74"
   ],
   "summary": {
-    "last-exit-nonzero": 2,
-    "loaded": 4,
+    "last-exit-nonzero": 3,
+    "running": 1,
     "not-loaded": 23,
+    "loaded": 2,
     "disabled": 4
   },
   "jobs": [
@@ -53,9 +54,9 @@
       "label": "com.vex.9acc-ads-campaign-guard",
       "title": "9acc guard: pause campaign jika spend tinggi tanpa IC/purchase",
       "category": "Guard / kill-switch",
-      "status": "loaded",
+      "status": "running",
       "launchctl": {
-        "pid": null,
+        "pid": "86158",
         "last_status": "0"
       },
       "schedule": "tiap 30 menit",
@@ -100,10 +101,10 @@
       "label": "com.vex.activate-val-0530-fallback",
       "title": "Val 9acc auto-ON fallback jam 05:30",
       "category": "Val automation",
-      "status": "loaded",
+      "status": "last-exit-nonzero",
       "launchctl": {
         "pid": null,
-        "last_status": "0"
+        "last_status": "1"
       },
       "schedule": "05:30 WIB",
       "program": "/opt/homebrew/bin/python3 vex-activate-val-daily-no-budget.py --run-label fallback-05:30",
@@ -118,9 +119,9 @@
       "stderr": {
         "path": "logs-vex-activate-val-0530-fallback.err",
         "exists": true,
-        "size": 0,
-        "mtime": "2026-06-23 05:30:00 WIB",
-        "tail": ""
+        "size": 1182,
+        "mtime": "2026-07-01 05:30:02 WIB",
+        "tail": "ace/vex-activate-val-daily-no-budget.py\", line 98, in request_json\n    raise RuntimeError({\"code\": response.status_code, \"body\": body})\nRuntimeError: {'code': 400, 'body': {'error': {'message': 'There have been too many calls to this ad-account. Wait a bit and try again. For more info, please refer to https://developers.facebook.com/docs/graph-api/overview/rate-limiting#ads-management.', 'type': 'OAuthException', 'code': 80004, 'error_subcode': 2446079, 'fbtrace_id': 'AeiPpH-DPHFweeN82416GjI'}}}"
       },
       "note": ""
     },
@@ -376,16 +377,16 @@
       "stdout": {
         "path": "vex-monitor-saldo.log",
         "exists": true,
-        "size": 1065,
-        "mtime": "2026-07-01 04:39:42 WIB",
-        "tail": "Notif sent: 1 akun\nNotif sent: 1 akun\nNotif sent: 1 akun"
+        "size": 1099,
+        "mtime": "2026-07-01 05:39:44 WIB",
+        "tail": "Notif sent: 1 akun\nNotif sent: 1 akun\nAll clear — semua di atas Rp1jt"
       },
       "stderr": {
         "path": "vex-monitor-saldo.log",
         "exists": true,
-        "size": 1065,
-        "mtime": "2026-07-01 04:39:42 WIB",
-        "tail": "Notif sent: 1 akun\nNotif sent: 1 akun\nNotif sent: 1 akun"
+        "size": 1099,
+        "mtime": "2026-07-01 05:39:44 WIB",
+        "tail": "Notif sent: 1 akun\nNotif sent: 1 akun\nAll clear — semua di atas Rp1jt"
       },
       "note": ""
     },
