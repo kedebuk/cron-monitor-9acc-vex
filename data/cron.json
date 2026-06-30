@@ -1,6 +1,6 @@
 {
   "title": "Cron Monitor — 9acc Vex",
-  "snapshot": "2026-06-30 10:16:48 WIB",
+  "snapshot": "2026-06-30 10:46:52 WIB",
   "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
   "accounts": [
     "Roni Riady-22 | 1953",
@@ -16,8 +16,9 @@
   ],
   "summary": {
     "last-exit-nonzero": 2,
-    "loaded": 4,
+    "running": 1,
     "not-loaded": 23,
+    "loaded": 3,
     "disabled": 4
   },
   "jobs": [
@@ -53,9 +54,9 @@
       "label": "com.vex.9acc-ads-campaign-guard",
       "title": "9acc guard: pause campaign jika spend tinggi tanpa IC/purchase",
       "category": "Guard / kill-switch",
-      "status": "loaded",
+      "status": "running",
       "launchctl": {
-        "pid": null,
+        "pid": "66582",
         "last_status": "0"
       },
       "schedule": "tiap 30 menit",
@@ -376,16 +377,16 @@
       "stdout": {
         "path": "vex-monitor-saldo.log",
         "exists": true,
-        "size": 689,
-        "mtime": "2026-06-30 09:38:57 WIB",
-        "tail": "All clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt\nNotif sent: 1 akun"
+        "size": 708,
+        "mtime": "2026-06-30 10:38:59 WIB",
+        "tail": "All clear — semua di atas Rp1jt\nNotif sent: 1 akun\nNotif sent: 1 akun"
       },
       "stderr": {
         "path": "vex-monitor-saldo.log",
         "exists": true,
-        "size": 689,
-        "mtime": "2026-06-30 09:38:57 WIB",
-        "tail": "All clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt\nNotif sent: 1 akun"
+        "size": 708,
+        "mtime": "2026-06-30 10:38:59 WIB",
+        "tail": "All clear — semua di atas Rp1jt\nNotif sent: 1 akun\nNotif sent: 1 akun"
       },
       "note": ""
     },
