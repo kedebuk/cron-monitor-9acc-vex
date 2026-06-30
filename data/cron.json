@@ -1,6 +1,6 @@
 {
   "title": "Cron Monitor — 9acc Vex",
-  "snapshot": "2026-07-01 00:18:33 WIB",
+  "snapshot": "2026-07-01 00:48:37 WIB",
   "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
   "accounts": [
     "Roni Riady-22 | 1953",
@@ -15,8 +15,7 @@
     "EVPO - SP - Herbahero HKM - 74"
   ],
   "summary": {
-    "loaded": 4,
-    "running": 1,
+    "loaded": 5,
     "not-loaded": 23,
     "last-exit-nonzero": 1,
     "disabled": 4
@@ -54,9 +53,9 @@
       "label": "com.vex.9acc-ads-campaign-guard",
       "title": "9acc guard: pause campaign jika spend tinggi tanpa IC/purchase",
       "category": "Guard / kill-switch",
-      "status": "running",
+      "status": "loaded",
       "launchctl": {
-        "pid": "13500",
+        "pid": null,
         "last_status": "0"
       },
       "schedule": "tiap 30 menit",
@@ -65,8 +64,8 @@
       "stdout": {
         "path": "logs-9acc-ads-campaign-guard-launchd.log",
         "exists": true,
-        "size": 88971,
-        "mtime": "2026-06-30 23:47:59 WIB",
+        "size": 89189,
+        "mtime": "2026-07-01 00:19:18 WIB",
         "tail": "mes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 123, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 123, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
       },
       "stderr": {
@@ -377,16 +376,16 @@
       "stdout": {
         "path": "vex-monitor-saldo.log",
         "exists": true,
-        "size": 970,
-        "mtime": "2026-06-30 23:39:29 WIB",
-        "tail": "Notif sent: 2 akun\nNotif sent: 2 akun\nNotif sent: 1 akun"
+        "size": 989,
+        "mtime": "2026-07-01 00:39:31 WIB",
+        "tail": "Notif sent: 2 akun\nNotif sent: 1 akun\nNotif sent: 1 akun"
       },
       "stderr": {
         "path": "vex-monitor-saldo.log",
         "exists": true,
-        "size": 970,
-        "mtime": "2026-06-30 23:39:29 WIB",
-        "tail": "Notif sent: 2 akun\nNotif sent: 2 akun\nNotif sent: 1 akun"
+        "size": 989,
+        "mtime": "2026-07-01 00:39:31 WIB",
+        "tail": "Notif sent: 2 akun\nNotif sent: 1 akun\nNotif sent: 1 akun"
       },
       "note": ""
     },
