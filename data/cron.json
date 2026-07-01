@@ -1,6 +1,6 @@
 {
   "title": "Cron Monitor — 9acc Vex",
-  "snapshot": "2026-07-01 14:50:19 WIB",
+  "snapshot": "2026-07-01 15:20:23 WIB",
   "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
   "accounts": [
     "Roni Riady-22 | 1953",
@@ -15,8 +15,7 @@
     "EVPO - SP - Herbahero HKM - 74"
   ],
   "summary": {
-    "last-exit-nonzero": 3,
-    "running": 1,
+    "last-exit-nonzero": 4,
     "not-loaded": 23,
     "loaded": 2,
     "disabled": 4
@@ -37,9 +36,9 @@
       "stdout": {
         "path": "vex-cron.log",
         "exists": true,
-        "size": 1100609,
-        "mtime": "2026-07-01 14:03:38 WIB",
-        "tail": "\n✅ Pushed 0 accounts to Supabase\n[2026-07-01 14:03:38] Hourly push selesai dengan gagal di: push-roas-supabase.py"
+        "size": 1107270,
+        "mtime": "2026-07-01 15:03:29 WIB",
+        "tail": "\n✅ Pushed 0 accounts to Supabase\n[2026-07-01 15:03:29] Hourly push selesai dengan gagal di: push-roas-supabase.py"
       },
       "stderr": {
         "path": "vex-cron.err",
@@ -54,10 +53,10 @@
       "label": "com.vex.9acc-ads-campaign-guard",
       "title": "9acc guard: pause campaign jika spend tinggi tanpa IC/purchase",
       "category": "Guard / kill-switch",
-      "status": "running",
+      "status": "last-exit-nonzero",
       "launchctl": {
-        "pid": "11327",
-        "last_status": "0"
+        "pid": null,
+        "last_status": "2"
       },
       "schedule": "tiap 30 menit",
       "program": "/opt/homebrew/bin/python3 vex-9acc-ads-campaign-guard.py --apply",
@@ -65,9 +64,9 @@
       "stdout": {
         "path": "logs-9acc-ads-campaign-guard-launchd.log",
         "exists": true,
-        "size": 94855,
-        "mtime": "2026-07-01 14:15:48 WIB",
-        "tail": "mes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 130, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 130, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
+        "size": 95072,
+        "mtime": "2026-07-01 14:55:14 WIB",
+        "tail": "rmes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 130, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 49, \"paused_count\": 0, \"errors_count\": 2, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
       },
       "stderr": {
         "path": "logs-9acc-ads-campaign-guard-launchd.err",
