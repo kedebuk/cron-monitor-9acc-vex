@@ -1,6 +1,6 @@
 {
   "title": "Cron Monitor — 9acc Vex",
-  "snapshot": "2026-07-01 17:50:42 WIB",
+  "snapshot": "2026-07-01 18:20:46 WIB",
   "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
   "accounts": [
     "Roni Riady-22 | 1953",
@@ -16,9 +16,8 @@
   ],
   "summary": {
     "last-exit-nonzero": 3,
-    "running": 1,
+    "loaded": 3,
     "not-loaded": 23,
-    "loaded": 2,
     "disabled": 4
   },
   "jobs": [
@@ -37,9 +36,9 @@
       "stdout": {
         "path": "vex-cron.log",
         "exists": true,
-        "size": 1120596,
-        "mtime": "2026-07-01 17:03:28 WIB",
-        "tail": "\n✅ Pushed 0 accounts to Supabase\n[2026-07-01 17:03:28] Hourly push selesai dengan gagal di: push-roas-supabase.py"
+        "size": 1127255,
+        "mtime": "2026-07-01 18:03:28 WIB",
+        "tail": "\n✅ Pushed 0 accounts to Supabase\n[2026-07-01 18:03:28] Hourly push selesai dengan gagal di: push-roas-supabase.py"
       },
       "stderr": {
         "path": "vex-cron.err",
@@ -54,10 +53,10 @@
       "label": "com.vex.9acc-ads-campaign-guard",
       "title": "9acc guard: pause campaign jika spend tinggi tanpa IC/purchase",
       "category": "Guard / kill-switch",
-      "status": "running",
+      "status": "loaded",
       "launchctl": {
-        "pid": "40880",
-        "last_status": "2"
+        "pid": null,
+        "last_status": "0"
       },
       "schedule": "tiap 30 menit",
       "program": "/opt/homebrew/bin/python3 vex-9acc-ads-campaign-guard.py --apply",
@@ -65,9 +64,9 @@
       "stdout": {
         "path": "logs-9acc-ads-campaign-guard-launchd.log",
         "exists": true,
-        "size": 95942,
-        "mtime": "2026-07-01 17:19:37 WIB",
-        "tail": "rmes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 130, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 77, \"paused_count\": 0, \"errors_count\": 2, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
+        "size": 96160,
+        "mtime": "2026-07-01 17:50:51 WIB",
+        "tail": "rmes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 77, \"paused_count\": 0, \"errors_count\": 2, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 130, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
       },
       "stderr": {
         "path": "logs-9acc-ads-campaign-guard-launchd.err",
@@ -620,16 +619,16 @@
       "stdout": {
         "path": "vex-trio-detector.log",
         "exists": true,
-        "size": 78229,
-        "mtime": "2026-07-01 16:01:58 WIB",
-        "tail": "LP active check: 7/118 campaigns with URL, 8 URLs, 0 bad, 3 slug mismatch\nSent: 2 boncos (0 paused, 0 reactivated), 5 gacor, 0 bumped, 0 delayed winners re-on\nSummary: 39 campaigns, spend Rp 3,275,437, 61P"
+        "size": 78990,
+        "mtime": "2026-07-01 18:01:59 WIB",
+        "tail": "Paused: 1 campaigns\nSent: 2 boncos (1 paused, 0 reactivated), 2 gacor, 0 bumped, 0 delayed winners re-on\nSummary: 41 campaigns, spend Rp 3,830,583, 62P"
       },
       "stderr": {
         "path": "vex-trio-detector.log",
         "exists": true,
-        "size": 78229,
-        "mtime": "2026-07-01 16:01:58 WIB",
-        "tail": "LP active check: 7/118 campaigns with URL, 8 URLs, 0 bad, 3 slug mismatch\nSent: 2 boncos (0 paused, 0 reactivated), 5 gacor, 0 bumped, 0 delayed winners re-on\nSummary: 39 campaigns, spend Rp 3,275,437, 61P"
+        "size": 78990,
+        "mtime": "2026-07-01 18:01:59 WIB",
+        "tail": "Paused: 1 campaigns\nSent: 2 boncos (1 paused, 0 reactivated), 2 gacor, 0 bumped, 0 delayed winners re-on\nSummary: 41 campaigns, spend Rp 3,830,583, 62P"
       },
       "note": ""
     },
