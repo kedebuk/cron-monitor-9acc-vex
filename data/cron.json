@@ -1,6 +1,6 @@
 {
   "title": "Cron Monitor — 9acc Vex",
-  "snapshot": "2026-07-01 19:20:53 WIB",
+  "snapshot": "2026-07-01 19:50:57 WIB",
   "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
   "accounts": [
     "Roni Riady-22 | 1953",
@@ -64,9 +64,9 @@
       "stdout": {
         "path": "logs-9acc-ads-campaign-guard-launchd.log",
         "exists": true,
-        "size": 96596,
-        "mtime": "2026-07-01 18:53:13 WIB",
-        "tail": "mes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 130, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 130, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
+        "size": 96814,
+        "mtime": "2026-07-01 19:24:34 WIB",
+        "tail": "mes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 130, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 131, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
       },
       "stderr": {
         "path": "logs-9acc-ads-campaign-guard-launchd.err",
@@ -376,16 +376,16 @@
       "stdout": {
         "path": "vex-monitor-saldo.log",
         "exists": true,
-        "size": 1406,
-        "mtime": "2026-07-01 18:40:10 WIB",
-        "tail": "All clear — semua di atas Rp1jt\nNotif sent: 1 akun\nNotif sent: 1 akun"
+        "size": 1425,
+        "mtime": "2026-07-01 19:40:15 WIB",
+        "tail": "Notif sent: 1 akun\nNotif sent: 1 akun\nNotif sent: 1 akun"
       },
       "stderr": {
         "path": "vex-monitor-saldo.log",
         "exists": true,
-        "size": 1406,
-        "mtime": "2026-07-01 18:40:10 WIB",
-        "tail": "All clear — semua di atas Rp1jt\nNotif sent: 1 akun\nNotif sent: 1 akun"
+        "size": 1425,
+        "mtime": "2026-07-01 19:40:15 WIB",
+        "tail": "Notif sent: 1 akun\nNotif sent: 1 akun\nNotif sent: 1 akun"
       },
       "note": ""
     },
