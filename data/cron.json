@@ -1,6 +1,6 @@
 {
   "title": "Cron Monitor — 9acc Vex",
-  "snapshot": "2026-07-01 16:20:30 WIB",
+  "snapshot": "2026-07-01 16:50:34 WIB",
   "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
   "accounts": [
     "Roni Riady-22 | 1953",
@@ -15,9 +15,9 @@
     "EVPO - SP - Herbahero HKM - 74"
   ],
   "summary": {
-    "last-exit-nonzero": 4,
+    "last-exit-nonzero": 3,
+    "loaded": 3,
     "not-loaded": 23,
-    "loaded": 2,
     "disabled": 4
   },
   "jobs": [
@@ -53,10 +53,10 @@
       "label": "com.vex.9acc-ads-campaign-guard",
       "title": "9acc guard: pause campaign jika spend tinggi tanpa IC/purchase",
       "category": "Guard / kill-switch",
-      "status": "last-exit-nonzero",
+      "status": "loaded",
       "launchctl": {
         "pid": null,
-        "last_status": "2"
+        "last_status": "0"
       },
       "schedule": "tiap 30 menit",
       "program": "/opt/homebrew/bin/python3 vex-9acc-ads-campaign-guard.py --apply",
@@ -64,9 +64,9 @@
       "stdout": {
         "path": "logs-9acc-ads-campaign-guard-launchd.log",
         "exists": true,
-        "size": 95507,
-        "mtime": "2026-07-01 16:06:16 WIB",
-        "tail": "rmes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 106, \"paused_count\": 1, \"errors_count\": 1, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 82, \"paused_count\": 0, \"errors_count\": 1, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
+        "size": 95725,
+        "mtime": "2026-07-01 16:39:55 WIB",
+        "tail": "rmes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 82, \"paused_count\": 0, \"errors_count\": 1, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 130, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
       },
       "stderr": {
         "path": "logs-9acc-ads-campaign-guard-launchd.err",
@@ -376,16 +376,16 @@
       "stdout": {
         "path": "vex-monitor-saldo.log",
         "exists": true,
-        "size": 1334,
-        "mtime": "2026-07-01 15:40:05 WIB",
-        "tail": "Notif sent: 1 akun\nAll clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt"
+        "size": 1368,
+        "mtime": "2026-07-01 16:40:07 WIB",
+        "tail": "All clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt"
       },
       "stderr": {
         "path": "vex-monitor-saldo.log",
         "exists": true,
-        "size": 1334,
-        "mtime": "2026-07-01 15:40:05 WIB",
-        "tail": "Notif sent: 1 akun\nAll clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt"
+        "size": 1368,
+        "mtime": "2026-07-01 16:40:07 WIB",
+        "tail": "All clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt"
       },
       "note": ""
     },
