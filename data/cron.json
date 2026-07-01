@@ -1,6 +1,6 @@
 {
   "title": "Cron Monitor — 9acc Vex",
-  "snapshot": "2026-07-02 05:22:07 WIB",
+  "snapshot": "2026-07-02 05:52:11 WIB",
   "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
   "accounts": [
     "Roni Riady-22 | 1953",
@@ -15,8 +15,8 @@
     "EVPO - SP - Herbahero HKM - 74"
   ],
   "summary": {
-    "last-exit-nonzero": 3,
-    "loaded": 3,
+    "last-exit-nonzero": 2,
+    "loaded": 4,
     "not-loaded": 23,
     "disabled": 4
   },
@@ -64,8 +64,8 @@
       "stdout": {
         "path": "logs-9acc-ads-campaign-guard-launchd.log",
         "exists": true,
-        "size": 100956,
-        "mtime": "2026-07-02 05:18:28 WIB",
+        "size": 101174,
+        "mtime": "2026-07-02 05:49:30 WIB",
         "tail": "mes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 132, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 132, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
       },
       "stderr": {
@@ -100,10 +100,10 @@
       "label": "com.vex.activate-val-0530-fallback",
       "title": "Val 9acc auto-ON fallback jam 05:30",
       "category": "Val automation",
-      "status": "last-exit-nonzero",
+      "status": "loaded",
       "launchctl": {
         "pid": null,
-        "last_status": "1"
+        "last_status": "0"
       },
       "schedule": "05:30 WIB",
       "program": "/opt/homebrew/bin/python3 vex-activate-val-daily-no-budget.py --run-label fallback-05:30",
@@ -111,9 +111,9 @@
       "stdout": {
         "path": "logs-vex-activate-val-0530-fallback.log",
         "exists": true,
-        "size": 2216,
-        "mtime": "2026-06-30 05:30:11 WIB",
-        "tail": "Failures: 0\nAccount read errors: 0\nArtifact: /Users/kantor/.hermes/profiles/vex/state/vex-val-auto-on-no-budget-20260630-053011.json"
+        "size": 2493,
+        "mtime": "2026-07-02 05:30:08 WIB",
+        "tail": "Failures: 0\nAccount read errors: 0\nArtifact: /Users/kantor/.hermes/profiles/vex/state/vex-val-auto-on-no-budget-20260702-053008.json"
       },
       "stderr": {
         "path": "logs-vex-activate-val-0530-fallback.err",
@@ -376,15 +376,15 @@
       "stdout": {
         "path": "vex-monitor-saldo.log",
         "exists": true,
-        "size": 1686,
-        "mtime": "2026-07-02 04:40:29 WIB",
+        "size": 1720,
+        "mtime": "2026-07-02 05:40:31 WIB",
         "tail": "All clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt"
       },
       "stderr": {
         "path": "vex-monitor-saldo.log",
         "exists": true,
-        "size": 1686,
-        "mtime": "2026-07-02 04:40:29 WIB",
+        "size": 1720,
+        "mtime": "2026-07-02 05:40:31 WIB",
         "tail": "All clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt"
       },
       "note": ""
