@@ -1,6 +1,6 @@
 {
   "title": "Cron Monitor — 9acc Vex",
-  "snapshot": "2026-07-02 23:24:21 WIB",
+  "snapshot": "2026-07-02 23:54:25 WIB",
   "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
   "accounts": [
     "Roni Riady-22 | 1953",
@@ -64,8 +64,8 @@
       "stdout": {
         "path": "logs-9acc-ads-campaign-guard-launchd.log",
         "exists": true,
-        "size": 108356,
-        "mtime": "2026-07-02 22:58:32 WIB",
+        "size": 108573,
+        "mtime": "2026-07-02 23:29:35 WIB",
         "tail": "ermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 97, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 97, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
       },
       "stderr": {
@@ -376,15 +376,15 @@
       "stdout": {
         "path": "vex-monitor-saldo.log",
         "exists": true,
-        "size": 2298,
-        "mtime": "2026-07-02 22:40:50 WIB",
+        "size": 2332,
+        "mtime": "2026-07-02 23:40:52 WIB",
         "tail": "All clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt"
       },
       "stderr": {
         "path": "vex-monitor-saldo.log",
         "exists": true,
-        "size": 2298,
-        "mtime": "2026-07-02 22:40:50 WIB",
+        "size": 2332,
+        "mtime": "2026-07-02 23:40:52 WIB",
         "tail": "All clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt\nAll clear — semua di atas Rp1jt"
       },
       "note": ""
