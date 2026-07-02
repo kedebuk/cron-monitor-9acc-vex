@@ -1,6 +1,6 @@
 {
   "title": "Cron Monitor — 9acc Vex",
-  "snapshot": "2026-07-02 15:53:25 WIB",
+  "snapshot": "2026-07-02 16:23:30 WIB",
   "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
   "accounts": [
     "Roni Riady-22 | 1953",
@@ -36,9 +36,9 @@
       "stdout": {
         "path": "vex-cron.log",
         "exists": true,
-        "size": 1241780,
-        "mtime": "2026-07-02 15:03:36 WIB",
-        "tail": "\n✅ Pushed 0 accounts to Supabase\n[2026-07-02 15:03:36] Hourly push selesai dengan gagal di: push-roas-supabase.py"
+        "size": 1248445,
+        "mtime": "2026-07-02 16:03:32 WIB",
+        "tail": "\n✅ Pushed 0 accounts to Supabase\n[2026-07-02 16:03:32] Hourly push selesai dengan gagal di: push-roas-supabase.py"
       },
       "stderr": {
         "path": "vex-cron.err",
@@ -64,8 +64,8 @@
       "stdout": {
         "path": "logs-9acc-ads-campaign-guard-launchd.log",
         "exists": true,
-        "size": 105316,
-        "mtime": "2026-07-02 15:42:01 WIB",
+        "size": 105534,
+        "mtime": "2026-07-02 16:13:24 WIB",
         "tail": "mes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 141, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 141, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
       },
       "stderr": {
@@ -619,16 +619,16 @@
       "stdout": {
         "path": "vex-trio-detector.log",
         "exists": true,
-        "size": 82229,
-        "mtime": "2026-07-02 14:02:08 WIB",
-        "tail": "LP active check: 11/134 campaigns with URL, 10 URLs, 0 bad, 3 slug mismatch\nSent: 1 boncos (0 paused, 0 reactivated), 4 gacor, 0 bumped, 0 delayed winners re-on\nSummary: 42 campaigns, spend Rp 3,421,656, 39P"
+        "size": 82775,
+        "mtime": "2026-07-02 16:01:43 WIB",
+        "tail": "LP active check: 10/133 campaigns with URL, 7 URLs, 0 bad, 2 slug mismatch\nSent: 0 boncos (0 paused, 0 reactivated), 3 gacor, 0 bumped, 0 delayed winners re-on\nSummary: 42 campaigns, spend Rp 3,968,609, 47P"
       },
       "stderr": {
         "path": "vex-trio-detector.log",
         "exists": true,
-        "size": 82229,
-        "mtime": "2026-07-02 14:02:08 WIB",
-        "tail": "LP active check: 11/134 campaigns with URL, 10 URLs, 0 bad, 3 slug mismatch\nSent: 1 boncos (0 paused, 0 reactivated), 4 gacor, 0 bumped, 0 delayed winners re-on\nSummary: 42 campaigns, spend Rp 3,421,656, 39P"
+        "size": 82775,
+        "mtime": "2026-07-02 16:01:43 WIB",
+        "tail": "LP active check: 10/133 campaigns with URL, 7 URLs, 0 bad, 2 slug mismatch\nSent: 0 boncos (0 paused, 0 reactivated), 3 gacor, 0 bumped, 0 delayed winners re-on\nSummary: 42 campaigns, spend Rp 3,968,609, 47P"
       },
       "note": ""
     },
