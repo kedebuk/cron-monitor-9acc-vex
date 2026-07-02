@@ -1,6 +1,6 @@
 {
   "title": "Cron Monitor — 9acc Vex",
-  "snapshot": "2026-07-02 20:54:03 WIB",
+  "snapshot": "2026-07-02 21:24:07 WIB",
   "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
   "accounts": [
     "Roni Riady-22 | 1953",
@@ -16,8 +16,9 @@
   ],
   "summary": {
     "last-exit-nonzero": 2,
-    "loaded": 4,
+    "running": 1,
     "not-loaded": 23,
+    "loaded": 3,
     "disabled": 4
   },
   "jobs": [
@@ -36,9 +37,9 @@
       "stdout": {
         "path": "vex-cron.log",
         "exists": true,
-        "size": 1275101,
-        "mtime": "2026-07-02 20:03:28 WIB",
-        "tail": "\n✅ Pushed 0 accounts to Supabase\n[2026-07-02 20:03:28] Hourly push selesai dengan gagal di: push-roas-supabase.py"
+        "size": 1281766,
+        "mtime": "2026-07-02 21:03:33 WIB",
+        "tail": "\n✅ Pushed 0 accounts to Supabase\n[2026-07-02 21:03:33] Hourly push selesai dengan gagal di: push-roas-supabase.py"
       },
       "stderr": {
         "path": "vex-cron.err",
@@ -53,9 +54,9 @@
       "label": "com.vex.9acc-ads-campaign-guard",
       "title": "9acc guard: pause campaign jika spend tinggi tanpa IC/purchase",
       "category": "Guard / kill-switch",
-      "status": "loaded",
+      "status": "running",
       "launchctl": {
-        "pid": null,
+        "pid": "24914",
         "last_status": "0"
       },
       "schedule": "tiap 30 menit",
