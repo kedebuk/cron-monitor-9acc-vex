@@ -1,6 +1,6 @@
 {
   "title": "Cron Monitor — 9acc Vex",
-  "snapshot": "2026-07-03 04:55:04 WIB",
+  "snapshot": "2026-07-03 05:25:08 WIB",
   "scope": "9acc Vex (10 accounts incl. EVERPRO-74), excluding EVPO-73 account-specific controllers",
   "accounts": [
     "Roni Riady-22 | 1953",
@@ -15,9 +15,9 @@
     "EVPO - SP - Herbahero HKM - 74"
   ],
   "summary": {
-    "loaded": 5,
+    "last-exit-nonzero": 2,
+    "loaded": 4,
     "not-loaded": 23,
-    "last-exit-nonzero": 1,
     "disabled": 4
   },
   "jobs": [
@@ -25,10 +25,10 @@
       "label": "com.kira.vex-roas-hourly",
       "title": "ROAS/report hourly all 9acc ke grup",
       "category": "Reports / alerts",
-      "status": "loaded",
+      "status": "last-exit-nonzero",
       "launchctl": {
         "pid": null,
-        "last_status": "0"
+        "last_status": "1"
       },
       "schedule": "05:03, 06:03, 07:03, 08:03, 09:03, 10:03, 11:03, 12:03, 13:03, 14:03, 15:03, 16:03, 17:03, 18:03, 19:03, 20:03, 21:03, 22:03, 23:03, 00:03 WIB",
       "program": "/bin/bash vex-hourly-all.sh",
@@ -36,9 +36,9 @@
       "stdout": {
         "path": "vex-cron.log",
         "exists": true,
-        "size": 1296335,
-        "mtime": "2026-07-03 00:03:16 WIB",
-        "tail": ">>> push-spending-limits.py\n⏸ Skip — di luar jam operasional\n[2026-07-03 00:03:16] All hourly jobs done."
+        "size": 1302989,
+        "mtime": "2026-07-03 05:03:33 WIB",
+        "tail": "\n✅ Pushed 0 accounts to Supabase\n[2026-07-03 05:03:33] Hourly push selesai dengan gagal di: push-roas-supabase.py"
       },
       "stderr": {
         "path": "vex-cron.err",
@@ -64,9 +64,9 @@
       "stdout": {
         "path": "logs-9acc-ads-campaign-guard-launchd.log",
         "exists": true,
-        "size": 110743,
-        "mtime": "2026-07-03 04:39:50 WIB",
-        "tail": "ermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 96, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 96, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
+        "size": 110960,
+        "mtime": "2026-07-03 05:10:56 WIB",
+        "tail": "ermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 96, \"paused_count\": 0, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}\n{\"mode\": \"apply\", \"accounts_checked\": 10, \"candidates_count\": 97, \"paused_count\": 1, \"errors_count\": 0, \"skipped_count\": 0, \"state\": \"/Users/kantor/.hermes/profiles/vex/state/vex-9acc-ads-campaign-guard-latest.json\"}"
       },
       "stderr": {
         "path": "logs-9acc-ads-campaign-guard-launchd.err",
@@ -139,9 +139,9 @@
       "stdout": {
         "path": "logs-vex-activate-val-5am.log",
         "exists": true,
-        "size": 2760,
-        "mtime": "2026-07-02 05:00:10 WIB",
-        "tail": "Failures: 7\nAccount read errors: 0\nArtifact: /Users/kantor/.hermes/profiles/vex/state/vex-val-auto-on-no-budget-20260702-050010.json"
+        "size": 3035,
+        "mtime": "2026-07-03 05:00:10 WIB",
+        "tail": "Failures: 6\nAccount read errors: 0\nArtifact: /Users/kantor/.hermes/profiles/vex/state/vex-val-auto-on-no-budget-20260703-050010.json"
       },
       "stderr": {
         "path": "logs-vex-activate-val-5am.err",
